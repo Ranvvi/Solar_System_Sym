@@ -4,16 +4,14 @@ using UnityEngine;
 
 public class MoonColider : MonoBehaviour
 {
-    public GameObject objToDestroy;
     public GameObject effect;
-
    
-   void OnTriggerDestroy(Collider other)
+   void OnTriggerDestroy(Collision collision)
     {
-        if(other.gameObject.tag == "Moon")
+        if(collision.gameObject.tag == "Moon")
         {
-            Instantiate(effect, objToDestroy.transform.position, objToDestroy.transform.rotation);
-            Destroy(objToDestroy);
+            Instantiate(effect, collision.transform.position, collision.transform.rotation);
+            Destroy(collision.gameObject);
         }
     }
 }

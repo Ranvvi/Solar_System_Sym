@@ -16,7 +16,8 @@ public class Orbit : MonoBehaviour
 
     private void OrbitAround()
     {
-        transform.RotateAround (Target.transform.position, Vector3.up, speed * Time.deltaTime);
+       transform.RotateAround(Target.transform.position, Vector3.up, speed * Time.deltaTime);
+        
     }
     
 }
