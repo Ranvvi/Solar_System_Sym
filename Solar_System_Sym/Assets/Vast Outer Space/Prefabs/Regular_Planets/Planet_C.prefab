@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1044448873202480477}
   - component: {fileID: 5511621180665261447}
   - component: {fileID: 7607156373532994712}
+  - component: {fileID: 77545645}
   m_Layer: 0
   m_Name: Planet_C
   m_TagString: Moon
@@ -120,3 +121,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   effect: {fileID: 100006, guid: e076683e0305e35498b8e8834978c0fa, type: 3}
+--- !u!114 &77545645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 136468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbc92b32753d1594cbf140e84f6a388e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Target: {fileID: 0}
+  speed: 70
